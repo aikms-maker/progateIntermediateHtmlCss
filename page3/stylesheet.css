@@ -1,0 +1,143 @@
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ここからCSSを書いていきましょう */
+header {
+  background-color: rgba(34, 49, 52, 0.9);
+  height: 65px;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+
+.header-left {
+  float:left;
+}
+
+.header-right {
+  float:right;
+  background-color: rgba(255, 255, 255, 0.3);            
+  transition: all 0.5s;
+}
+
+.header-right:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.logo {
+  margin-top: 20px;
+  width: 124px;
+}
+
+.header-login {
+  color: white;
+  padding: 0 25px;
+  line-height: 65px;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(https://prog-8.com/images/html/advanced/top.png);
+  color: #FFFFFF;
+  text-align: center;
+  background-size: cover;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.top-container-title {
+  font-size: 45px;
+  opacity: 0.7;
+  letter-spacing: 3px;
+}
+
+.top-wrapper p {
+  opacity: 0.7;
+  margin-bottom: 15px;
+}
+
+.btn {
+  padding: 8px 24px;
+  display: inline-block;
+  color: #FFFFFF;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.signup {
+  margin-top: 15px;            
+  margin-bottom: 15px;
+  background-color: #239b76;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+i {
+  margin-right: 5px;
+}
+
+.btn:hover {
+  opacity: 1.0;
+}
+
+.lesson-wrapper {
+  text-align: center;
+  height: 580px;
+  background-color: #f7f7f7;
+}
+
+.lesson-title {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top:90px;
+  width: 100%;
+  color: white;
+}
+
+.text-plain {
+  display: inline-block;
+  width: 80%;
+  margin-top: 15px;
+  color: #b3aeb5;
+  font-size: 13px;
+}
